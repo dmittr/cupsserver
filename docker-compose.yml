@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+    cupsserver:
+        image: cupsserver
+        restart: unless-stopped
+        volumes:
+            - ./data:/data
+        environment:
+          TZ: Asia/Vladivostok
+          CUPS_ADMIN_PASSWD: 12345678
+          APP_DOMAIN: cups.domain.tld

@@ -1,0 +1,4 @@
+sales 	| socket://10.0.144.251:9100	| HP M201N 					| Sales_Dept. 		| postscript-hp:0/ppd/hplip/HP/hp-laserjet_pro_m201_m202-ps.ppd
+design	| socket://10.0.196.240:9100	| HP M225dw					| Designers 		| postscript-hp:0/ppd/hplip/HP/hp-laserjet_pro_mfp_m225_m226-ps.ppd
+tech    | socket://10.0.2.250:9100		| Samsung ML2950        	| Techsupport_team	| suld/Samsung_ML-2950_Series.ppd.gz
+b2b		| socket://10.0.145.242:9100	| HP LaserJet MFP M426dw	| B2B_Dept.			| postscript-hp:0/ppd/hplip/HP/hp-laserjet_mfp_m426_m427-ps.ppd
