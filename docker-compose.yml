@@ -5,6 +5,9 @@ services:
         restart: unless-stopped
         volumes:
             - ./data:/data
+        ports:
+            - 631:631
+            - 8181:80
         environment:
           TZ: Asia/Vladivostok
           CUPS_ADMIN_PASSWD: 12345678

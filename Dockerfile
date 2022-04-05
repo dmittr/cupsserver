@@ -16,6 +16,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone &
   hp-ppd \
   hplip \
   printer-driver-cups-pdf \
+  lighttpd \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
