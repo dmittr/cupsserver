@@ -29,6 +29,7 @@ for printer in $(cat ${inifile}|tr -d " "|tr -d "\t"|cut -f 1 -d "|") ; do
 	lpadmin -p ${printer} -o PageSize=A4 -E
 	LINUX_CMD="$LINUX_CMD
 lpadmin -p ${printer} -v ipp://$APP_DOMAIN:631/printers/${printer} -m raw -o printer-is-shared=false -L \"${LOCATION}\" -D \"${DEVICE}\" -E;lpadmin -p ${printer} -o printer-error-policy=retry-job;lpadmin -p ${printer} -o Media=A4;lpadmin -p ${printer} -o PageSize=A4 -E"
+	echo "<li><b>http://$APP_DOMAIN:631/printers/$NAME</b> - $DEV $LOC</li>" >> ${htmlfile}
 done
 
 echo "</ul></li><li>Далее -&gt Изготовитель:Generic, Модель: MS Publisher Imagesetter -&gt OK, Далее, Готово</li></ul><br><br>Linux:<br><pre>$LINUX_CMD</pre>" >> ${htmlfile}
