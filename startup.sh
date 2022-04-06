@@ -48,5 +48,6 @@ sleep 5
 kill -9 $CUPS_PID
 
 # CUPS run
-echo "Staring CUPS"
+echo "Staring CUPS and lighttpd"
+/usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf &
 /usr/sbin/cupsd -f
